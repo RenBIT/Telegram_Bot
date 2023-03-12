@@ -9,12 +9,12 @@ import (
 func init() {
 
 	//Можно удалить - только для разработки
-	Token, err := ioutil.ReadFile("../taboo/Token.txt")
+	Token, err := ioutil.ReadFile("../../taboo/Token.txt")
 	if err != nil {
 		panic(err)
 	}
 	//////////////////////////////////////////////////
-	fmt.Println(Token)
+
 	bot.Token = string(Token) //токен
 	//	ParseSiteMp3()            //Подключим парсер сайта с mp3
 	bot.SetKeyName = []string{"Привет!", "Как дела?", "Подскажи время?", "время?", "Все ?"}

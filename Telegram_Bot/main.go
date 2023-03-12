@@ -32,7 +32,7 @@ func UpdateBotBot() {
 	// отправить анимацию мини играs
 	//sendDice("⚽")
 	// отправить видео ссылка
-	//sendVideo("https://static.videezy.com/system/resources/previews/000/037/501/original/Hi-Tech_HUD__global_warming_concept_00352.mp4")
+	sendVideo("https://static.videezy.com/system/resources/previews/000/037/501/original/Hi-Tech_HUD__global_warming_concept_00352.mp4")
 	// отправить аудио ссылка
 	//sendAudio(url_mp3.File)
 

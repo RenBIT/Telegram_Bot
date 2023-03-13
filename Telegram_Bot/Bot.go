@@ -55,7 +55,7 @@ func main() {
 
 			botMessage.Username = updates[0].Message.Chat.Username
 
-			UpdateBotBot() //Обновляем функцию если что то пришло
+			UpdateBot() //Обновляем функцию если что то пришло
 			for _, update := range updates {
 				offset = update.UpdateID + 1 //Получим последние сообщение
 			}

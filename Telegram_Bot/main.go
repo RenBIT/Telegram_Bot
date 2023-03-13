@@ -23,16 +23,19 @@ func init() {
 	bot.SetKeyName = []string{"Привет!", "Как дела?", "Подскажи время?", "время?", "Все ?"}
 }
 
-func UpdateBotBot() {
+/*
+Эта функция сработает при входящем сообщение!
+*/
+func UpdateBot() {
 	defer fmt.Println("- Все сообщения отправлены!")
-	//проиграть зыук пр  поступление нового сообщения
+	//проиграть зыук при поступление нового сообщения
 	PlaySoundA_Windows("file/audio/AudioMessenge.wav")
 
 	// Отправить картинку
 	//sendPhote("<b>Текст картинки</b>", "https://interesnoznat.com/wp-content/uploads/big_1473653108_image.jpg")
 	// отправить сообщение
 	//sendMessage("Привет мир!!! ")
-	// отправить анимацию мини играs
+	// отправить анимацию, мини игра
 	//sendDice("⚽")
 	// отправить видео ссылка
 	//sendVideo("https://static.videezy.com/system/resources/previews/000/037/501/original/Hi-Tech_HUD__global_warming_concept_00352.mp4")

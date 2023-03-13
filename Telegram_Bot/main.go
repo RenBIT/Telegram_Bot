@@ -27,7 +27,7 @@ func UpdateBotBot() {
 	PlaySoundA_Windows("file/audio/AudioMessenge.wav")
 
 	// Отправить картинку
-	//sendPhote("<b>Текст картинки</b>", "https://interesnoznat.com/wp-content/uploads/big_1473653108_image.jpg")
+	sendPhote("<b>Текст картинки</b>", "https://interesnoznat.com/wp-content/uploads/big_1473653108_image.jpg")
 	// отправить сообщение
 	//sendMessage("Привет мир!!! ")
 	// отправить анимацию мини играs

@@ -41,7 +41,7 @@ func isCommands() {
 	// Если пришла команда или нажали кнопку
 	switch bot.MsgText {
 	case "/start":
-		sendKeyBoard() //кнопки
+		sendKeyBoard() //Рестарт кнопки
 		return
 	case "/help":
 		sendMessage(help())

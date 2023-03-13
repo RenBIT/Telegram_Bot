@@ -27,10 +27,10 @@ func UpdateBot() {
 	// отправить сообщение
 	//sendMessage("Привет мир!!! ")
 	// отправить анимацию, мини игра
-	//sendDice("⚽")
+	sendDice("⚽")
 	// отправить видео ссылка
 	//sendVideo("https://static.videezy.com/system/resources/previews/000/037/501/original/Hi-Tech_HUD__global_warming_concept_00352.mp4")
-	// отправить аудио ссылка
+	// отправить аудио ссылка URL
 	//sendAudio(url_mp3.File)
 
 	isCommands()

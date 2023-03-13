@@ -11,7 +11,7 @@ func init() {
 	//	ParseSiteMp3()            //Подключим парсер сайта с mp3
 
 	//Выводим кнопки
-	sendButton("Привет!", "Как дела?", "Подскажи время?")
+	sendButton("Привет!", "Как дела?", "Подскажи время?", "Мой ник?")
 }
 
 /*
@@ -55,6 +55,9 @@ func isCommands() {
 		return
 	case "Подскажи время?":
 		sendMessage("<b>Текущие время: </b>" + time.Now().Format(" 15:04"))
+		return
+	case "Мой ник?":
+		sendMessage("<b>Твой ник: </b>" + botMessage.Username)
 		return
 	default:
 		//	sendMessage(Command)

@@ -181,10 +181,10 @@ func postBot(buff []byte) { //отправка данных на сервер т
 
 }
 
-func sendButton(name ...string) {
+func sendButton(name ...string) { //Добавим кнопки в массив
 	bot.SetKeyName = name
-
 }
+
 func sendKeyBoard() {
 
 	bot.TypeMessage = "sendMessage"

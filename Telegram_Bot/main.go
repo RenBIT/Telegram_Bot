@@ -18,6 +18,8 @@ func init() {
 	bot.Token = string(Token) // Тут нужно вписать ваш токен
 
 	//	ParseSiteMp3()            //Подключим парсер сайта с mp3
+
+	//Выведим кнопки
 	bot.SetKeyName = []string{"Привет!", "Как дела?", "Подскажи время?", "время?", "Все ?"}
 }
 
@@ -40,6 +42,7 @@ func UpdateBotBot() {
 	isCommands()
 }
 
+// Проверка на команды и нажатий кнопок
 func isCommands() {
 	// Если пришла команда или нажали кнопку
 	switch bot.MsgText {

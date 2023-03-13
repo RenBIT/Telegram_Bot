@@ -2,25 +2,16 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"time"
 )
 
 func init() {
 
-	//Можно удалить!! - только для разработки
-	Token, err := ioutil.ReadFile("../../taboo/Token.txt")
-	if err != nil {
-		panic(err)
-	}
-	//////////////////////////////////////////////////
-
-	bot.Token = string(Token) // Тут нужно вписать ваш токен
-
+	bot.Token = Token() // Тут нужно вписать ваш токен
 	//	ParseSiteMp3()            //Подключим парсер сайта с mp3
 
 	//Выводим кнопки
-	bot.SetKeyName = []string{"Привет!", "Как дела?", "Подскажи время?", "время?", "Все ?"}
+	bot.SetKeyName = []string{"Привет!", "Как дела?", "Подскажи время?"}
 }
 
 /*
@@ -64,9 +55,6 @@ func isCommands() {
 		return
 	case "Подскажи время?":
 		sendMessage("<b>Текущие время: </b>" + time.Now().Format(" 15:04"))
-		return
-	case "время?":
-		sendMessage("Нажата время?")
 		return
 	default:
 		//	sendMessage(Command)

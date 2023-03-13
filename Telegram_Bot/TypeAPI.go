@@ -60,19 +60,6 @@ type InputFile struct {
 	InputFile string `json:"-"`
 }
 
-// type SendKeyBoard struct {
-// 	ChatID      int    `json:"chat_id"`
-// 	ParseMode   string `json:"parse_mode"`
-// 	Text        string `json:"text"`
-// 	ReplyMarkup struct {
-// 		ResizeKeyboard bool `json:"resize_keyboard"`
-// 		Keyboard       [1][4]struct {
-// 			Text         string `json:"text"`
-// 			CallbackData string `json:"callback_data"`
-// 		} `json:"keyboard"`
-// 	} `json:"reply_markup"`
-// }
-
 type SendKeyBoard struct {
 	ChatID      int         `json:"chat_id"`
 	ParseMode   string      `json:"parse_mode"`

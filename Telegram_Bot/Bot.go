@@ -181,6 +181,10 @@ func postBot(buff []byte) { //отправка данных на сервер т
 
 }
 
+func sendButton(name ...string) {
+	bot.SetKeyName = name
+
+}
 func sendKeyBoard() {
 
 	bot.TypeMessage = "sendMessage"

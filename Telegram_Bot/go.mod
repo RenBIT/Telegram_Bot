@@ -1,4 +1,4 @@
-module github.com/robteix/TelegramBot
+module github.com/RenBIT/TelegramBot
 
 go 1.20
 

@@ -13,15 +13,6 @@ func init() {
 	//Выводим кнопки
 	sendButton("Привет!", "Как дела?", "Подскажи время?", "Мой ник?")
 
-	mass := [...]int{1, 299, 3, 4, 76, 9}
-	max := mass[0]
-	for i := range mass {
-		if max < mass[i] {
-			max = mass[i]
-		}
-
-	}
-	fmt.Println("Максимальное число в массиве:", max)
 }
 
 /*

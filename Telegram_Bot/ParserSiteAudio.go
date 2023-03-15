@@ -55,14 +55,4 @@ func getSizeFile(mp3 string) int {
 		defer rsp.Body.Close()
 		return int(rsp.ContentLength)
 	}
-
-	// file, err := os.Open("Путь до файла")
-	// if err != nil {
-	// 	fmt.Println(err)
-	// }
-	// fi, err := file.Stat()
-	// if err != nil {
-	// 	fmt.Println(err)
-	// }
-	// fmt.Println(fi.Size())
 }

@@ -6,7 +6,7 @@ package main
 import "io/ioutil"
 
 func Token() string {
-	Token, err := ioutil.ReadFile("../../taboo/Token.txt")
+	Token, err := ioutil.ReadFile("../taboo/Token.txt")
 	if err != nil {
 		panic(err)
 	}
